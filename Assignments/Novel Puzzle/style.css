@@ -1,0 +1,12 @@
+.L {
+    text-transform: uppercase;
+    font-size: 50px;
+    text-decoration: underline red;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.orem {
+    text-transform: uppercase;
+    font-weight: bold;
+}
