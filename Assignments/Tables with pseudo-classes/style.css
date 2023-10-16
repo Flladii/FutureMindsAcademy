@@ -1,0 +1,50 @@
+body {
+    padding: 1em 2em;
+  }
+  
+  
+
+ ol {
+    list-style: none;
+    padding: 0;
+    float: left;
+  }
+
+li {
+    text-align: center;
+    line-height: 2;
+    margin-top: 1px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+li:nth-child(even) {
+    background-color: green;
+    color: white;
+}
+
+li:nth-child(1) {
+    color: black;
+    background-color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+li:nth-child(3) , li:nth-child(5) {
+    background-color: rgb(0, 255, 0);
+    color: white;
+}
+
+
+
+
+  
+  
+  .one {
+    width: auto;
+    float: left;
+    margin-right: 2em;
+    
+  }
+ 
+
+  
