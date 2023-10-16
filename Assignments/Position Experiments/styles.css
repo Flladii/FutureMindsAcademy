@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border {
+    position: relative;
+    width: 550px;
+    margin: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
+    border-radius: 2px;
+    z-index: 1000;
+}
+
+.box1  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box1 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box1 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    
+}
+
+.box2  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box2 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box2 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box3  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box3 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box3 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box4  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box4 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box4 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box5 p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box5 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box5 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box6  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box6 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box6 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box7  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box7 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box7 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box8  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box8 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box8 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+.box9 p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box9 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box9 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box10 p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box10 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box10 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box11  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box11 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box11 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+.box12 p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box12 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box12 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box13  p {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.box13 h1 {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+}
+
+.box13 h4 {
+    position: absolute;
+    left: 540px;
+    bottom: 35px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.video {
+    border: 1px solid black;
+    width: 300px;
+    position: fixed;
+    display: inline;
+    top: 600px;
+    left: 800px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1100;
+}
