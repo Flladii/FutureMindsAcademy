@@ -1,0 +1,23 @@
+.box1 {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+
+
+
+.monkey {
+    width: 300px;
+    float: left;
+    margin: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.monkey:hover {
+    width: 310px;
+    border: 3px dashed red;
+    margin: 10px;
+}
