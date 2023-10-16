@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+hr {
+  width: 33%;
+  border: 1px solid red;
+  top: 60px;
+  position: relative;
+}
+
+.light {
+  color: white;
+  background-color: grey;
+  height: 25vh;
+  margin-top: 0;
+}
+
+.light h1,
+.dark h1 {
+  text-decoration: underline;
+  margin: 0;
+}
+
+.dark {
+  color: black;
+  background-color: rgb(219, 218, 197);
+  height: 25vh;
+  margin-top: 0;
+}
