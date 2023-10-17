@@ -1,0 +1,746 @@
+@font-face {
+  font-family: "TiltNeon-Regular";
+  src: url(fonts/TiltNeon-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  cursor: url(Pointers/crosshair.png), crosshair;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/1301340.png);
+  animation: fadeOut 4s ease forwards;
+}
+
+/* CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
+/* CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
+/* CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
+
+.homeheader h1 {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  font-size: 50px;
+  color: white;
+}
+
+#line1 {
+  width: 50%;
+}
+
+.homenav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "TiltNeon-Regular";
+}
+
+.homenav li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.homenav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2px solid rgba(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgba(247, 0, 255, 0.3);
+  cursor: pointer;
+}
+
+.homenav a:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(247, 0, 255, 0.8);
+  transition: 0.5s;
+}
+
+#line2 {
+  width: 50%;
+}
+
+#about-me {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#about-me:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+#about-me:hover h2 {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  font-size: 18px;
+}
+
+#about-me:hover p {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  font-size: 22px;
+}
+
+#about-me h2 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  font-size: 40px;
+  color: white;
+}
+
+.fotoprofilit {
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+#line3 {
+  width: 50%;
+}
+
+#education {
+  transition: all 0.8s;
+}
+
+#education {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+#education ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "TiltNeon-Regular";
+  margin-left: 20px;
+}
+
+#education:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
+#education li {
+  display: inline;
+  margin-right: 30px;
+}
+
+#education:hover h2 {
+  font-size: 18px;
+  transition: 1s;
+}
+
+#education:hover ul {
+  font-size: 30px;
+  transition: 1s;
+}
+
+#education:hover #underlist {
+  color: white;
+}
+
+#line4 {
+  width: 50%;
+}
+
+#myskills {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#myskills:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+#myskills:hover h2 {
+  font-size: 18px;
+  transition: 0.8s;
+}
+
+#myskills ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "TiltNeon-Regular";
+}
+
+#myskills li {
+  display: inline;
+  margin-right: 30px;
+}
+
+#myskills:hover #right1 {
+  float: left;
+  transition: 2s;
+  margin-bottom: 10px;
+}
+
+#myskills:hover #left1 {
+  float: right;
+  transition: 2s;
+  margin-bottom: 10px;
+}
+
+#left1 {
+  float: right;
+  margin: 0px;
+}
+
+#right1 {
+  float: left;
+  margin: 0px;
+}
+
+#myskills:hover #main-title {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.7s;
+  border-radius: 5px;
+  margin-left: 190px;
+  margin-right: 190px;
+  font-size: 22px;
+}
+
+#myskills:hover .ulskills {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.8s;
+  border-radius: 5px;
+  margin-left: 190px;
+  margin-right: 190px;
+  font-size: 22px;
+}
+
+#line5 {
+  width: 50%;
+}
+
+#myprojects {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#myprojects ol {
+  list-style: none;
+  cursor: pointer;
+}
+
+#myprojects:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+  height: 210px;
+  transition: 3.1s;
+}
+
+#myprojects:hover h2 {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+  font-size: 18px;
+}
+
+#myprojects:hover li {
+  color: rgba(255, 255, 255);
+  transition: 0.8s;
+  font-size: 26px;
+}
+
+#myprojects a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#myprojects:hover a {
+  border-radius: 10px;
+  padding: 2px;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: rgb(24, 24, 24, 0.8);
+  border: 2px solid rgba(247, 0, 255, 0.8);
+  transition: 0.9s;
+  color: white;
+}
+
+#line6 {
+  width: 50%;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+footer:hover {
+  color: black;
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+/* CSS FOR MMMMMYYYYYYPPPPPROOOOOOJJJJJJJEEEEEEEECCCCCCCTTTTTTSSSSSS */
+
+.projectheader h1 {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  font-size: 50px;
+  color: white;
+}
+
+#line01 {
+  width: 50%;
+}
+
+.projectnav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "TiltNeon-Regular";
+}
+
+.projectnav li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.projectnav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2px solid rgba(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgba(247, 0, 255, 0.3);
+  cursor: pointer;
+}
+
+.projectnav a:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(247, 0, 255, 0.8);
+  transition: 0.5s;
+}
+
+#line02 {
+  width: 50%;
+}
+
+#projekti1 {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#projekti1:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+#projekti1:hover h2 {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  font-size: 18px;
+}
+
+#projekti1:hover p {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+  font-size: 22px;
+}
+
+#projekti1 h2 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  font-size: 40px;
+  color: white;
+}
+
+.projektifoto1 {
+  width: 600px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2%;
+}
+
+#projekti1:hover .projektifoto1 {
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: 1.4s;
+}
+
+#line03 {
+  width: 50%;
+}
+
+#projekti2 {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#projekti2:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+#projekti2:hover h2 {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  font-size: 18px;
+}
+
+#projekti2:hover p {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+  font-size: 22px;
+}
+
+#projekti2 h2 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  font-size: 40px;
+  color: white;
+}
+
+.projektifoto2 {
+  width: 250px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2%;
+  display: inline;
+}
+
+#projekti2:hover .projektifoto2 {
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: 1.4s;
+}
+
+#line04 {
+  width: 50%;
+}
+
+#projekti3 {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#projekti3:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+#projekti3:hover h2 {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  font-size: 18px;
+}
+
+#projekti3:hover p {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+  font-size: 22px;
+}
+
+#projekti3 h2 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  font-size: 40px;
+  color: white;
+}
+
+.projektifoto3 {
+  width: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2%;
+}
+
+#projekti3:hover .projektifoto3 {
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: 1.4s;
+}
+
+#line05 {
+  width: 50%;
+}
+
+/* CSSS FOR COOOOOOOOOOOONNNNNNNNNNNNNNTTTTTTTTTTTTAAAAAAAAAAAAAACCCCCCCCCCCTTTTTTTTTTTTTTTTTT */
+
+.contactheader h1 {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  font-size: 50px;
+  color: white;
+}
+
+#line01 {
+  width: 50%;
+}
+
+.contactnav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "TiltNeon-Regular";
+}
+
+.contactnav li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.contactnav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2px solid rgba(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgba(247, 0, 255, 0.3);
+  cursor: pointer;
+}
+
+.contactnav a:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(247, 0, 255, 0.8);
+  transition: 0.5s;
+}
+
+#contactform {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#contactform:hover {
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(24, 24, 24, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+.forma input {
+  background-color: rgb(24, 24, 24, 0.9);
+  resize: none;
+  margin: 10px;
+  font-weight: bold;
+  outline: none;
+  font-size: 15px;
+  color: rgba(247, 0, 255, 0.8);
+  width: 250px;
+  height: 40px;
+}
+
+.forma textarea {
+  background-color: rgb(24, 24, 24, 0.9);
+  width: 500px;
+  height: 150px;
+  resize: none;
+  margin: 10px;
+  font-weight: bold;
+  outline: none;
+  font-size: 15px;
+}
+
+.forma:hover input {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  border: 2px solid rgba(247, 0, 255, 0.8);
+  border-radius: 10px;
+}
+
+.forma:hover textarea {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  border: 2px solid rgba(247, 0, 255, 0.8);
+  border-radius: 10px;
+}
+
+.forma button {
+  background-color: rgb(24, 24, 24, 0.9);
+  resize: none;
+  margin: 10px;
+  font-weight: bold;
+  outline: none;
+  font-size: 15px;
+  color: rgba(247, 0, 255, 0.8);
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.forma:hover button {
+  color: rgba(247, 0, 255, 0.8);
+  transition: 0.8s;
+  border: 2px solid rgba(247, 0, 255, 0.8);
+  border-radius: 10px;
+}
+
+#connectwithme {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
+  font-family: "TiltNeon-Regular";
+  color: white;
+  background-color: rgba(247, 0, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  width: 900px;
+  margin-left: 500px;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#connectwithme:hover img{
+    width: 100px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+/** CUSTOM SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgba(0, 247, 255, 0.719), rgba(247, 0, 255, 0.8));
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar-track-piece {
+    color: red;
+}
