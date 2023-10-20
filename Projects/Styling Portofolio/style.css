@@ -1,40 +1,34 @@
-@font-face {
-  font-family: "TiltNeon-Regular";
-  src: url(fonts/TiltNeon-Regular.ttf);
-}
-
 * {
   box-sizing: border-box;
-  cursor: url(Pointers/crosshair.png), crosshair;
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-html {
-  scroll-behavior: smooth;
+  cursor: url(images/crosshair.png), crosshair;
   width: auto;
   height: auto;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-image: url(images/1301340.png);
+  background-repeat: re;
   animation: fadeOut 4s ease forwards;
 }
 
-/* CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
-/* CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
-/* CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
+@font-face {
+  font-family: "TiltNeon-Regular";
+  src: url(fonts/TiltNeon-Regular.ttf);
+}
 
-.homeheader h1 {
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*------------ CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
+header h1 {
   position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
@@ -43,23 +37,19 @@ body {
   color: white;
 }
 
-#line1 {
-  width: 50%;
-}
-
-.homenav ul {
+nav ul {
   list-style: none;
   text-align: center;
   padding: 10px;
   font-family: "TiltNeon-Regular";
 }
 
-.homenav li {
+nav li {
   display: inline;
   margin-right: 30px;
 }
 
-.homenav a {
+nav a {
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -70,46 +60,61 @@ body {
   cursor: pointer;
 }
 
-.homenav a:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
-  border: 2px solid rgba(247, 0, 255, 0.8);
-  transition: 0.5s;
+nav a:hover {
+  color: rgba(247, 0, 255);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(247, 0, 255);
+  transition: 0.9s;
 }
 
-#line2 {
-  width: 50%;
+#about-me, #education, #education:hover #underlist, #myskills, #myprojects, #myprojects:hover a, #projekti1, #projekti1:hover, #projekti2, #projekti2:hover, #projekti3, #projekti3:hover, #contactform, #connectwithme, #backhome a {
+  color: white;
+}
+
+#about-me, #education, #myskills, #myprojects, #contactform, #connectwithme, #projekti1, #projekti2, #projekti3 {
+  transition: all 0.8s;
+  z-index: 10;
+  position: relative;
+}
+
+#about-me:hover, #education:hover, #myskills:hover, #myprojects:hover, #contactform:hover, #connectwithme:hover, #projekti1:hover, #projekti2:hover, #projekti3:hover {
+  z-index: 11;
 }
 
 #about-me {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
   height: 600px;
-  margin-left: 500px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
 }
 
 #about-me:hover {
   color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
+  background-color: rgb(0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 1.8s;
+  transition: 1.2s ease-in-out;
   opacity: 0 1;
   animation-duration: 5s;
+  transform: scale(1.2);
+}
+
+#about-me:not(:hover) {
+  transition: transform 2.2s ease;
+  transform: scale(1);
+  transition: all 1.2s ease-in-out;
 }
 
 #about-me:hover h2 {
   color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
-  
+  transition: all 2s ease-in-out;
+  transition-duration: 2.2s;
 }
 
 #about-me p {
@@ -119,47 +124,35 @@ body {
 
 #about-me:hover p {
   color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
+  transition: all 2.2s ease-in-out;
+  transition-duration: 2.2s;
 }
 
 #about-me h2 {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
   font-size: 40px;
-  color: white;
-  
 }
 
 .fotoprofilit {
   width: 500px;
   height: 300px;
   border-radius: 15px;
-  border: 2px solid white;
+  border: 2px solid rgba(247, 0, 255, 0.8);
   margin-bottom: 40px;
 }
 
-#line3 {
-  width: 50%;
-}
-
 #education {
-  transition: all 0.8s;
-}
-
-#education {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
   height: 400px;
-  margin-left: 500px;
+  margin: 0 auto;
   font-size: 22px;
   padding: 5px;
 }
@@ -169,16 +162,24 @@ body {
   text-align: center;
   padding: 10px;
   font-family: "TiltNeon-Regular";
-  margin-left: 20px;
+  margin-left: 24px;
+  letter-spacing: 3px;
 }
 
 #education:hover {
   color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
+  background-color: rgb(0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-  animation: fadeIn 7s ease forwards;
-  transition-duration: 5s ease forwards;
+  transition: 1.2s ease-in-out;
+  opacity: 0 1;
+  animation-duration: 5s;
+  transform: scale(1.2);
+}
+
+#education:not(:hover) {
+  transition: transform 2.2s ease;
+  transform: scale(1);
+  transition: all 1.2s ease-in-out;
 }
 
 #education li {
@@ -186,54 +187,34 @@ body {
   margin-right: 30px;
 }
 
-#education:hover h2 {
-  font-size: 18px;
-  transition: 1s;
-}
-
-#education:hover ul {
-  font-size: 30px;
-  transition: 1s;
-}
-
-#education:hover #underlist {
-  color: white;
-}
-
-#line4 {
-  width: 50%;
-}
-
 #myskills {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
   height: 350px;
-  margin-left: 500px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
 }
 
 #myskills:hover {
   color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
+  background-color: rgb(0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0.8);
   transition: 0.8s;
   animation: fadeIn 7s ease forwards;
   transition-duration: 5s ease forwards;
-
+  transform: scale(1.2);
 }
 
-#myskills:hover h2 {
-  transition: 0.8s;
-  animation: fadeIn 7s ease forwards;
-  transition-duration: 5s ease forwards;
+#myskills:not(:hover) {
+  transition: transform 2.2s ease;
+  transform: scale(1);
+  transition: all 2.2s ease-in-out;
 }
 
 #myskills ul {
@@ -241,6 +222,7 @@ body {
   text-align: center;
   padding: 10px;
   font-family: "TiltNeon-Regular";
+  margin-left: 20px;
 }
 
 #myskills li {
@@ -248,66 +230,28 @@ body {
   margin-right: 30px;
 }
 
-#myskills:hover #right1 {
-  float: left;
-  transition: 2s;
-  margin-bottom: 10px;
-  
-  animation: fadeIn 7s ease forwards;
-  transition-duration: 5s ease forwards;
-}
-
-#myskills:hover #left1 {
-  float: right;
-  transition: 2s;
-  margin-bottom: 10px;
-  animation: fadeIn 7s ease forwards;
-  transition-duration: 5s ease forwards;
-}
-
 #left1 {
   float: right;
-  margin: 0px;
 }
 
 #right1 {
   float: left;
-  margin: 0px;
-}
-
-#myskills:hover #main-title {
-  color: rgba(0, 0, 0, 0.8);
-  transition: 0.7s;
-  border-radius: 5px;
-  margin-left: 190px;
-  margin-right: 190px;
-  font-size: 22px;
 }
 
 #myskills:hover .ulskills {
   color: rgba(255, 255, 255, 0.8);
   transition: 0.8s;
-  border-radius: 5px;
-  margin-left: 190px;
-  margin-right: 190px;
-  font-size: 22px;
-}
-
-#line5 {
-  width: 50%;
 }
 
 #myprojects {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
-  margin-left: 500px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
 }
@@ -318,45 +262,33 @@ body {
 }
 
 #myprojects:hover {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
+  color: rgba(247, 0, 255, 0.8);
+  background-color: rgb(0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0.8);
   transition: 0.8s;
-  height: 210px;
-  transition: 3.1s;
+  animation: fadeIn 7s ease forwards;
+  transition-duration: 5s ease forwards;
+  transform: scale(1.2);
 }
 
-#myprojects:hover h2 {
-  color: rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-  font-size: 18px;
-}
-
-#myprojects:hover li {
-  color: rgba(255, 255, 255);
-  transition: 0.8s;
-  font-size: 26px;
+#myprojects:not(:hover) {
+  transition: transform 2.2s ease;
+  transform: scale(1);
+  transition: all 2.2s ease-in-out;
 }
 
 #myprojects a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  line-height: 20px;
 }
 
 #myprojects:hover a {
-  border-radius: 10px;
   padding: 2px;
-  margin-left: 10px;
-  font-size: 20px;
-  background-color: rgb(24, 24, 24, 0.8);
-  border: 2px solid rgba(247, 0, 255, 0.8);
   transition: 0.9s;
-  color: white;
-}
-
-#line6 {
-  width: 50%;
+  color: aqua;
+  transition: 0.9s;
 }
 
 footer {
@@ -369,7 +301,7 @@ footer {
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
-  margin-left: 500px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
 }
@@ -380,219 +312,86 @@ footer:hover {
   border: 2px solid rgba(0, 0, 0, 0.8);
   transition: 0.8s;
 }
-
-/* CSS FOR MMMMMYYYYYYPPPPPROOOOOOJJJJJJJEEEEEEEECCCCCCCTTTTTTSSSSSS */
-
-.projectheader h1 {
-  position: relative;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  font-size: 50px;
-  color: white;
-}
-
-#line01 {
-  width: 50%;
-}
-
-.projectnav ul {
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-  font-family: "TiltNeon-Regular";
-}
-
-.projectnav li {
-  display: inline;
-  margin-right: 30px;
-}
-
-.projectnav a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  border: 2px solid rgba(255, 255, 255);
-  border-radius: 15px;
-  padding: 15px;
-  background-color: rgba(247, 0, 255, 0.3);
-  cursor: pointer;
-}
-
-.projectnav a:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
-  border: 2px solid rgba(247, 0, 255, 0.8);
-  transition: 0.5s;
-}
-
-#line02 {
-  width: 50%;
-}
-
+                                                                   /* CSS FOR MMMMMYYYYYYPPPPPROOOOOOJJJJJJJEEEEEEEECCCCCCCTTTTTTSSSSSS */
 #projekti1 {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
-  height: 682px;
-  margin-left: 500px;
+  height: 650px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
-  transition: 0.8s;
-  animation: fadeIn 7s ease forwards;
-  transition-duration: 5s ease forwards;
 }
 
 #projekti1:hover {
   color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
+  background-color: rgb(0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-}
-
-#projekti1:hover h2 {
-  color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
-}
-
-#projekti1:hover p {
-  color: rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-}
-
-#projekti1 h2 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  font-size: 40px;
-  color: white;
+  transition: 1.2s ease-in-out;
+  animation-duration: 5s;
+  transform: scale(1.2);
 }
 
 .projektifoto1 {
   width: 600px;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  border-radius: 2%;
-}
-
-#projekti1:hover .projektifoto1 {
-  width: 400px;
-  border-radius: 10px;
   border: 2px solid black;
-  transition: 1.4s;
-}
-
-#line03 {
-  width: 50%;
+  border-radius: 12px;
 }
 
 #projekti2 {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
-  height: 455px;
-  margin-left: 500px;
+  height: 430px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
 }
 
 #projekti2:hover {
   color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
+  background-color: rgb(0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-}
-
-#projekti2:hover h2 {
-  color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
-  font-size: 18px;
-}
-
-#projekti2:hover p {
-  color: rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-  font-size: 22px;
-}
-
-#projekti2 h2 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  font-size: 40px;
-  color: white;
+  transition: 1.2s ease-in-out;
+  animation-duration: 5s;
+  transform: scale(1.2);
 }
 
 .projektifoto2 {
   width: 250px;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  border-radius: 2%;
-  display: inline;
-}
-
-#projekti2:hover .projektifoto2 {
-  width: 150px;
-  border-radius: 10px;
   border: 2px solid black;
-  transition: 1.4s;
-}
-
-#line04 {
-  width: 50%;
+  border-radius: 12px;
 }
 
 #projekti3 {
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
-  height: 598px;
-  margin-left: 500px;
+  height: 560px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
 }
 
 #projekti3:hover {
   color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
+  background-color: rgb(0, 0, 0);
   border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-}
-
-#projekti3:hover h2 {
-  color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
-  font-size: 18px;
-}
-
-#projekti3:hover p {
-  color: rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-  font-size: 22px;
-}
-
-#projekti3 h2 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  font-size: 40px;
-  color: white;
+  transition: 1.2s ease-in-out;
+  animation-duration: 5s;
+  transform: scale(1.2);
 }
 
 .projektifoto3 {
@@ -600,74 +399,16 @@ footer:hover {
   border: 2px solid rgba(0, 0, 0, 0.8);
   border-radius: 2%;
 }
-
-#projekti3:hover .projektifoto3 {
-  width: 250px;
-  border-radius: 10px;
-  border: 2px solid black;
-  transition: 1.4s;
-}
-
-#line05 {
-  width: 50%;
-}
-
 /* CSSS FOR COOOOOOOOOOOONNNNNNNNNNNNNNTTTTTTTTTTTTAAAAAAAAAAAAAACCCCCCCCCCCTTTTTTTTTTTTTTTTTT */
-
-.contactheader h1 {
-  position: relative;
+#contactform, #connectwithme {
   text-align: center;
   text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
   font-family: "TiltNeon-Regular";
-  font-size: 50px;
-  color: white;
-}
-
-#line01 {
-  width: 50%;
-}
-
-.contactnav ul {
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-  font-family: "TiltNeon-Regular";
-}
-
-.contactnav li {
-  display: inline;
-  margin-right: 30px;
-}
-
-.contactnav a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  border: 2px solid rgba(255, 255, 255);
-  border-radius: 15px;
-  padding: 15px;
-  background-color: rgba(247, 0, 255, 0.3);
-  cursor: pointer;
-}
-
-.contactnav a:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
-  border: 2px solid rgba(247, 0, 255, 0.8);
-  transition: 0.5s;
-}
-
-#contactform {
-  position: relative;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  color: white;
   background-color: rgba(247, 0, 255, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   width: 900px;
-  margin-left: 500px;
+  margin: 0 auto;
   font-size: 20px;
   padding: 5px;
 }
@@ -681,7 +422,6 @@ footer:hover {
 
 .forma input {
   background-color: rgb(24, 24, 24, 0.9);
-  resize: none;
   margin: 10px;
   font-weight: bold;
   outline: none;
@@ -702,20 +442,6 @@ footer:hover {
   font-size: 15px;
 }
 
-.forma:hover input {
-  color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
-  border: 2px solid rgba(247, 0, 255, 0.8);
-  border-radius: 10px;
-}
-
-.forma:hover textarea {
-  color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
-  border: 2px solid rgba(247, 0, 255, 0.8);
-  border-radius: 10px;
-}
-
 .forma button {
   background-color: rgb(24, 24, 24, 0.9);
   resize: none;
@@ -729,71 +455,28 @@ footer:hover {
   cursor: pointer;
 }
 
-.forma:hover button {
+.forma:hover input:hover, button:hover, textarea:hover {
   color: rgba(247, 0, 255, 0.8);
   transition: 0.8s;
   border: 2px solid rgba(247, 0, 255, 0.8);
   border-radius: 10px;
+  transition: 0.9s;
 }
 
-#backhome a{
-  color: white;
+#backhome a {
   font-style: italic;
   cursor: pointer;
   text-decoration: underline black;
 }
 
-
-
-
-#connectwithme {
-  position: relative;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  color: white;
-  background-color: rgba(247, 0, 255, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 900px;
-  margin-left: 500px;
-  font-size: 20px;
-  padding: 5px;
+#connectwithme img {
+  width: 110px;
   cursor: pointer;
 }
-
-#connectwithme:hover img{
-    width: 100px;
-    transition: 0.8s;
-    cursor: pointer;
-}
-
-
-
-/** CUSTOM SCROLL BAR */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    color: black;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(rgba(0, 247, 255, 0.719), rgba(247, 0, 255, 0.8));
-    border-radius: 10px;
-    
-}
-
-::-webkit-scrollbar-track-piece {
-    color: red;
-}
-
 
 .BackToTop {
   width: 70px;
-  position: relative;
   cursor: pointer;
   float: right;
 }
+#line1 {width: 50%; color: white;}
