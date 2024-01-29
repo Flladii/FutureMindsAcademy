@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid black;
+    flex-flow: column wrap;
+   
+}
