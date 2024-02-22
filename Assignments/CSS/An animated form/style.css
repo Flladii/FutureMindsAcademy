@@ -1,0 +1,117 @@
+body{
+    margin: 20;
+    background-color: rgb(154, 195, 144);
+    text-align: center;
+}
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+ @keyframes appear {
+    from{
+        opacity: 0%;
+        top: 8px;
+    }
+
+    to{
+        opacity: 100%;
+        top: -2px;
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+input{
+    background-color: rgb(158, 194, 224);
+    padding: 10px;
+    margin: 8px;
+    width: 70vw;
+}
+
+
+
+
+
+
+
+img{
+    margin: 40px;
+    width: 40px;
+    animation-name: rotate;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left:200px;
+    bottom: 90px;
+}
+
+
+
+form{
+    border: solid black 2px;
+    width: 80vw;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+
+
+
+button{
+    background-color: rgb(128, 207, 231);
+    color: black;
+    margin: 20px;
+}
+
+
+span{
+    position: relative;
+    top: 8px;
+    right: 150px;
+    opacity: 0%;
+
+}
+
+input:focus + span {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

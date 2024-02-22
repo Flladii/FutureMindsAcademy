@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <style>
+      body {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: beige;
+        font-size: 1.2rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+      }
+      #email,
+      #password {
+        width: 500px;
+        height: 2rem;
+        font-size: 1.2rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      #btn {
+        align-self: center;
+        width: 7rem;
+        background-color: rgb(76, 195, 76);
+        color: white;
+        padding: 10px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <!--  -->
+  <!--  -->
+
+  <body>
+    <form id="form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" />
+
+      <p id="lowercaseLetter">At least one lowercase letter</p>
+      <p id="uppercaseLetter">At least one uppercase letter</p>
+      <p id="number">At least one number</p>
+      <p id="symbol">At least one of (.,'!#)</p>
+      <button id="btn" type="submit" disabled>Submit</button>
+    </form>
+
+    <!--  -->
+    <!--  -->
+
+    <script>
+      let emailInput = document.getElementById("email");
+      let passwordInput = document.getElementById("password");
+      let btn = document.getElementById("btn");
+      let form = document.getElementById("form");
+
+      //regex
+      function checkEmailValidity() {
+        const email = emailInput.value;
+        const validEmail = /\S+@\S+\.\S+/.test(email);
+        emailInput.style.border = validEmail
+          ? "3px solid green"
+          : "3px solid red";
+      }
+
+      function checkPasswordRequirements() {
+        const password = passwordInput.value;
+        const lowercaseLetter = /[a-z]/.test(password);
+        const uppercaseLetter = /[A-Z]/.test(password);
+        const number = /\d/.test(password);
+        const symbol = /[.,'!#]/.test(password);
+
+        document.getElementById("lowercaseLetter").style.color = lowercaseLetter
+          ? "green"
+          : "black";
+        document.getElementById("uppercaseLetter").style.color = uppercaseLetter
+          ? "green"
+          : "black";
+        document.getElementById("number").style.color = number
+          ? "green"
+          : "black";
+        document.getElementById("symbol").style.color = symbol
+          ? "green"
+          : "black";
+
+        const allRequirementsMet =
+          lowercaseLetter && uppercaseLetter && number && symbol;
+        btn.disabled = !allRequirementsMet;
+      }
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        alert("Submitted");
+      }
+
+      emailInput.addEventListener("input", checkEmailValidity);
+      password.addEventListener("input", checkPasswordRequirements);
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
+</html>

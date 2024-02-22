@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Dimensions</title>
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: monospace, sans-serif;
+    }
+
+    .room {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      align-items: center;
+      border: 2px solid rgb(30, 100, 143);
+      margin: 20px;
+      background-color: rgb(30, 100, 143);
+      padding: 100px;
+      position: relative;
+    }
+
+    .dimensions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+
+  <body>
+    <div class="room" id="room">
+      <div class="dimensions" id="dimensions"></div>
+    </div>
+    <script>
+      let width = parseFloat(prompt("Enter thw width:"));
+      let length = parseFloat(prompt("Enter the length:"));
+
+      if (isNaN(length) || isNaN(width) || length <= 0 || width <= 0) {
+        alert("Invalid input. Please enter valid positive numbers.");
+      } else {
+        if (width < length) {
+          [width, length] = [length, width];
+        }
+        let area = length * width;
+        let perimeter = 2 * (length + width);
+
+        let room = document.getElementById("room");
+        room.style.width = width + "vw";
+        room.style.height = length + "vh";
+        document.body.appendChild(room);
+
+        let dimensions = document.getElementById("dimensions");
+        dimensions.innerHTML = `<p>Area: ${area}m<sup>2</sup></p>
+                                    <p>Perimeter: ${perimeter}m</p>`;
+      }
+    </script>
+  </body>
+</html> -->

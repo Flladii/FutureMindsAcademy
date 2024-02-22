@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #range {
+        position: fixed;
+        right: 0px;
+        top: 100px;
+        transform: rotate(-90deg);
+      }
+      p {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="range" id="range" min="10" max="48" value="16" />
+    <p id="text">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+      aliquam natus mollitia alias veritatis aut aliquid quos velit, cumque
+      fugit quis iusto repudiandae iure ullam? Aliquam repellendus autem nobis
+      omnis.
+    </p>
+    <script>
+      let range = document.getElementById("range");
+      let text = document.getElementById("text");
+
+      range.addEventListener("input", (e) => {
+        text.style.fontSize = range.value + "px";
+      });
+    </script>
+  </body>
+</html>

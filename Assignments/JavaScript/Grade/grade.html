@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let points = parseInt(prompt("What points did you get?"));
+      let grade;
+
+      if (points < 0 || points > 100) {
+        throw new Error("There was an error in your input.");
+        ("There was an error in your input.");
+      } else if (points <= 19) {
+        grade = "Your grade is 1. Work harder! ";
+      } else if (points <= 39) {
+        grade = "Your grade is 2. Nice job!";
+      } else if (points <= 59) {
+        grade = "Your grade is 3. Good job!";
+      } else if (points <= 79) {
+        grade = "Your grade is 4. Great job!";
+      } else if (points <= 100) {
+        grade = "Your grade is 5. Well done!! You got the highest grade!";
+      } else {
+        throw new Error("There was an error in your input.");
+      }
+      console.log(grade);
+    </script>
+  </body>
+</html>

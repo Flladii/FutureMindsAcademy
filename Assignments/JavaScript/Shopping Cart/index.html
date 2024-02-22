@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      ul {
+        padding: 0;
+        width: 30rem;
+        background-color: pink;
+        border-radius: 8px;
+        list-style-type: none;
+      }
+
+      li {
+        padding: 1rem;
+        font-size: 1.1rem;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+      }
+      li:hover {
+        background-color: palevioletred;
+        color: black;
+      }
+
+      p {
+        color: palevioletred;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let cart = [
+        {
+          title: "Milk",
+          category: "Food",
+          quantity: 3,
+          price: 1.65,
+        },
+        {
+          title: "Bread",
+          category: "Food",
+          quantity: 2,
+          price: 2.25,
+        },
+        {
+          title: "Smartphone",
+          category: "Electronics",
+          quantity: 1,
+          price: 699.99,
+        },
+        {
+          title: "Running Shoes",
+          category: "Fashion",
+          quantity: 1,
+          price: 49.99,
+        },
+        {
+          title: "Book: The Hitchhiker's Guide to the Galaxy",
+          category: "Books",
+          quantity: 1,
+          price: 12.99,
+        },
+        {
+          title: "Coffee Maker",
+          category: "Appliances",
+          quantity: 1,
+          price: 34.99,
+        },
+        {
+          title: "Gaming Laptop",
+          category: "Electronics",
+          quantity: 1,
+          price: 1299.99,
+        },
+        {
+          title: "Sunglasses",
+          category: "Fashion",
+          quantity: 2,
+          price: 19.99,
+        },
+      ];
+
+      const itemList = document.createElement("ul");
+
+      cart.forEach((item) => {
+        const itemListEl = document.createElement("li");
+        itemListEl.innerHTML = `
+    <span>${item.title}</span>
+    <span>${item.quantity}pcs = $${(item.quantity * item.price).toFixed(
+          2
+        )}</span>
+`;
+        itemList.appendChild(itemListEl);
+      });
+      const totalPrice = cart.reduce(
+        (total, item) => total + item.quantity * item.price,
+        0
+      );
+
+      const totalPriceEl = document.createElement("p");
+      totalPriceEl.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+
+      document.body.appendChild(itemList);
+
+      document.body.appendChild(totalPriceEl);
+    </script>
+  </body>
+</html>

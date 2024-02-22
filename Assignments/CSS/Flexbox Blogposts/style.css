@@ -1,0 +1,119 @@
+/* Left Section */
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sectionleft-container {
+    position: fixed;
+    width: 16%;
+    height: 100vh;
+    background-color: rgb(61, 80, 93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.sectionleft-container h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.sectionleft-container p {
+    margin: 0;
+    color: rgb(175, 202, 218);
+    font-size: 1.3rem;
+}
+
+.sectionleft-container button {
+    width: 100px;
+    background-color: rgb(61, 80, 93);
+    border-radius: 2px;
+    border: 2px solid rgb(175, 202, 218);
+    color: white;
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+/* Right Section */
+
+.sectionright-container {
+    margin-left: calc(16% + 40px);
+    padding: 50px 4% 0px 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 1em;
+    color: rgb(177, 177, 177);
+}
+
+hr {
+    width: 100%;
+    margin-top: -13px;
+    background-color: white;
+}
+
+.cards-data-container {
+    display: flex;
+    align-items: center;
+}
+
+.cards-data-title {
+    flex: 1;
+}
+
+.name {
+    color: rgb(109, 174, 215);
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.cards-data-title h1 {
+    
+    font-size: 2em;
+}
+
+.cards-data-title p {
+    margin-top: -20px;
+    color: rgb(177, 177, 177);
+}
+
+.css {
+    font-size: 0.9em;
+    background-color: rgb(90, 186, 89);
+}
+
+.html {
+    font-size: 0.9em;
+    background-color: rgb(77, 133, 209);
+}
+
+.cards-text {
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.javaScript {
+    background-color: red;
+}
+
+.css, .html, .javaScript {
+    padding: 2px 5px;
+    margin: 0px 2px;
+    color: white;
+}

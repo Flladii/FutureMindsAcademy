@@ -1,0 +1,19 @@
+button{
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: aliceblue;
+    border: 2px solid black;
+    cursor: pointer;
+    transition-property: background-color, transfrom;
+    transition-duration: .4s, 0.1s;
+    transition-timing-function: ease-in;
+}
+
+
+
+button:hover{
+    background-color: rgb(79, 112, 112);
+    color: white;
+    transform: scale(1.2);
+}

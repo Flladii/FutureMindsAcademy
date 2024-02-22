@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of numbers</title>
+  </head>
+  <body>
+    <script>
+      let number = Math.abs(parseInt(prompt("Write a number:")));
+      let sum = 0;
+
+      while (number != 0) {
+        number = Math.abs(parseInt(prompt("Write a number:")));
+        sum += number;
+      }
+
+      alert(`The sum of the numbers you wrote is ${sum}!`);
+    </script>
+  </body>
+</html>

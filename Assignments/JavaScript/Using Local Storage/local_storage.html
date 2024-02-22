@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Local Storage</title>
+    <style>
+           :root{
+          --bg-color:'white'
+          --text-color:'black'
+      }
+
+      *{
+        color: inherit;
+      }
+
+      #colorModeBtn{
+        background-color: beige;
+        color: black;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="toggleTheme()" id="colorModeBtn">
+      Change Color Theme
+    </button>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      voluptas id dolores excepturi quae voluptatum minus, debitis sit eius,
+      corrupti recusandae expedita esse cum neque non ratione provident! Veniam
+      modi cupiditate, non vitae quae dolorum sapiente beatae dolorem incidunt
+      fuga tempora sequi reprehenderit recusandae ipsa, ut, quas pariatur quos
+      voluptas soluta possimus eius et aliquid. Facilis cupiditate odit tempore
+      dolorum, odio earum libero laborum officia iusto praesentium
+      exercitationem? Doloribus eum necessitatibus consequatur beatae, velit vel
+      ea possimus cumque illum. Ea aspernatur ipsam dignissimos at. A commodi
+      nostrum esse consectetur eos, temporibus suscipit, rerum sunt, sint minima
+      hic! Repudiandae, suscipit est quaerat iste fugiat sint, id possimus
+      perferendis nobis provident rerum! Totam debitis corporis molestias qui
+      placeat nemo ea vitae voluptate, sit laudantium officiis cum dolore
+      quisquam ducimus consequatur quod delectus exercitationem harum! Quod
+      incidunt qui provident commodi laborum. Atque sed explicabo vel eius sunt
+      dolore quos amet recusandae fugit beatae.
+    </p>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      voluptas id dolores excepturi quae voluptatum minus, debitis sit eius,
+      corrupti recusandae expedita esse cum neque non ratione provident! Veniam
+      modi cupiditate, non vitae quae dolorum sapiente beatae dolorem incidunt
+      fuga tempora sequi reprehenderit recusandae ipsa, ut, quas pariatur quos
+      voluptas soluta possimus eius et aliquid. Facilis cupiditate odit tempore
+      dolorum, odio earum libero laborum officia iusto praesentium
+      exercitationem? Doloribus eum necessitatibus consequatur beatae, velit vel
+      ea possimus cumque illum. Ea aspernatur ipsam dignissimos at. A commodi
+      nostrum esse consectetur eos, temporibus suscipit, rerum sunt, sint minima
+      hic! Repudiandae, suscipit est quaerat iste fugiat sint, id possimus
+      perferendis nobis provident rerum! Totam debitis corporis molestias qui
+      placeat nemo ea vitae voluptate, sit laudantium officiis cum dolore
+      quisquam ducimus consequatur quod delectus exercitationem harum! Quod
+      incidunt qui provident commodi laborum. Atque sed explicabo vel eius sunt
+      dolore quos amet recusandae fugit beatae.
+    </p>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      voluptas id dolores excepturi quae voluptatum minus, debitis sit eius,
+      corrupti recusandae expedita esse cum neque non ratione provident! Veniam
+      modi cupiditate, non vitae quae dolorum sapiente beatae dolorem incidunt
+      fuga tempora sequi reprehenderit recusandae ipsa, ut, quas pariatur quos
+      voluptas soluta possimus eius et aliquid. Facilis cupiditate odit tempore
+      dolorum, odio earum libero laborum officia iusto praesentium
+      exercitationem? Doloribus eum necessitatibus consequatur beatae, velit vel
+      ea possimus cumque illum. Ea aspernatur ipsam dignissimos at. A commodi
+      nostrum esse consectetur eos, temporibus suscipit, rerum sunt, sint minima
+      hic! Repudiandae, suscipit est quaerat iste fugiat sint, id possimus
+      perferendis nobis provident rerum! Totam debitis corporis molestias qui
+      placeat nemo ea vitae voluptate, sit laudantium officiis cum dolore
+      quisquam ducimus consequatur quod delectus exercitationem harum! Quod
+      incidunt qui provident commodi laborum. Atque sed explicabo vel eius sunt
+      dolore quos amet recusandae fugit beatae.
+    </p>
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        const isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode);
+      }
+
+      //
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const body = document.body;
+        const savedTheme = localStorage.getItem("darkMode");
+        if (savedTheme === "true") {
+          body.classList.add("dark-mode");
+        }
+      });
+    </script>
+  </body>
+</html>

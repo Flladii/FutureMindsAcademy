@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const number = parseInt(
+        prompt("Please enter a positive integer between 1 and 100:")
+      );
+
+      if (isNaN(number) || number < 1 || number > 100) {
+        alert("!!Please enter a positive number between 1 and 100!!");
+      }
+      let result = "";
+      let counter = 1;
+
+      while (counter <= number) {
+        result = result + counter + " ,";
+
+        counter++;
+      }
+      result += counter;
+      alert(result);
+      //enesiahh1
+    </script>
+  </body>
+</html>

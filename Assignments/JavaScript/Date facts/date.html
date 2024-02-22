@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Get Some Fun Birthday Facts</h1>
+      <div>
+        <input type="date" id="date" />
+        <button onclick="getFunfacts">Get Fact</button>
+      </div>
+    </div>
+
+    <script>
+      async function fetchBirthdayFact(date) {
+        const formattedDate = formatDate(date);
+        const url = `https://numbersapi.p.rapidapi.com/${formattedDate}/date?fragment=true&json=true`;
+        const options = {
+          method: "GET",
+          headers: {
+            "X-RapidAPI-Key":
+              "e4d453d878msh71e8e2aa317c8dfp1bb741jsndcc2e0eb6623",
+            "X-RapidAPI-Host": "numbersapi.p.rapidapi.com",
+          },
+        };
+        try {
+          const response = await fetch(url, options);
+          const result = await response.json();
+          return result;
+        } catch (error) {
+          console.error(error);
+          throw new Error("Failed to fetch data. Please try again.");
+          alert(`A error was detected check your console log!!!`);
+        }
+      }
+
+      async function getFunfacts() {
+        let bDayElement = document.getElementById("date");
+        let date = bDayElement.value;
+        console.log(date);
+        let splittedDate = date.split("-");
+
+        let month = parseInt(splittedDate[1]);
+        let day = parseInt(splittedDate[2]);
+        let url2 = `https://numbersapi.p.rapidapi.com/${month}/${day}/date?fragment=true&json=true`;
+
+        let results = Promise.all(
+          Array(3).fill(() => {
+            return fetchFacts(url2);
+          })
+        );
+
+        console.log(results);
+        results.forEach((result) => {
+          let p = document.createElement("p");
+          p.textContent = result;
+          document.body.appendChild(p);
+        });
+      }
+      getFunfacts();
+    </script>
+  </body>
+</html>

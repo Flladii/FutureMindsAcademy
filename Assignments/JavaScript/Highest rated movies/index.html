@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highest rated movies</title>
+    <style>
+      /* body {
+        margin: 20px;
+        padding: 10px;
+        font-family: "young serif";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        border: black solid 3px;
+        height: 10rem;
+        width: 10rem;
+        margin: 10px;
+      }
+
+      .card-top {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: beige;
+        text-align: center;
+        height: 100px;
+      }
+      img {
+        border: 1px solid black;
+        height: 500px;
+      }
+
+      .card-bottom {
+        display: flex;
+        flex-direction: column;
+      } */
+
+      /*jo perqindje, jo width height, fonts ma tvogla,
+       position abs me relatove nparent,
+       edhe me top bottom aand stuff nimgs jo heights widths
+        edhe me gap image me 100%*/
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+
+      .movie-card {
+        position: relative;
+        width: 300px;
+        height: 450px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .movie-card:hover {
+        transform: scale(1.05);
+      }
+
+      .movie-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+        z-index: 1;
+      }
+
+      .movie-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .movie-details {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+        z-index: 2;
+      }
+
+      .movie-details h2 {
+        margin-top: 0;
+        font-size: 1.8em;
+      }
+
+      .movie-details p {
+        margin: 5px 0;
+      }
+
+      .movie-details p.rating {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+      }
+
+      .movie-details p.rating .star {
+        margin-right: 5px;
+        color: #ffd700;
+        font-size: 1.2em;
+      }
+
+      .movie-details p.actors {
+        font-style: italic;
+      }
+
+      .highest-rated {
+        background: linear-gradient(135deg, #ffd700, #e44d26);
+        color: #fff;
+        border: 2px solid #ffd700;
+        transition: transform 0.3s ease-in-out;
+        animation: pulse 1.5s infinite alternate;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+
+        100% {
+          transform: scale(1.05);
+        }
+      }
+
+      .highest-rated .movie-details {
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let movies = [
+        {
+          name: "The Godfather",
+          releaseYear: 1972,
+          rating: 9.2,
+          mainActors: ["Marlon Brando", "Al Pacino", "James Caan"],
+          image: "https://i.ebayimg.com/images/g/oFkAAOSwoWRjZOHS/s-l1200.webp",
+        },
+        {
+          name: "The Shawshank Redemption",
+          releaseYear: 1994,
+          rating: 9.3,
+          mainActors: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+          image:
+            "https://m.media-amazon.com/images/I/71715eBi1sL._AC_UF894,1000_QL80_.jpg",
+        },
+        {
+          name: "Pulp Fiction",
+          releaseYear: 1994,
+          rating: 8.9,
+          mainActors: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+          image:
+            "https://cdn.europosters.eu/image/1300/posters/pulp-fiction-cover-i1288.jpg",
+        },
+        {
+          name: "The Dark Knight",
+          releaseYear: 2008,
+          rating: 9.0,
+          mainActors: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+          image:
+            "https://m.media-amazon.com/images/I/71dwS9phhCL._AC_UF894,1000_QL80_.jpg",
+        },
+        {
+          name: "Forrest Gump",
+          releaseYear: 1994,
+          rating: 8.8,
+          mainActors: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+          image: "https://m.media-amazon.com/images/I/61SESEtA1NL.jpg",
+        },
+      ];
+
+      movies.sort((a, b) => {
+        if (a.rating > b.rating) return -1;
+        else if (a.rating == b.rating) return 0;
+        else return 1;
+      });
+
+      movies.forEach((movie, index) => {
+        let cardClass = index === 0 ? "movie-card highest-rated" : "movie-card";
+        let card = document.createElement("div");
+        card.className = cardClass;
+
+        card.innerHTML = `
+        <div class="card-top">
+        <h2>${movie}</h2>
+        <p>${movie.rating}, ${movie.releaseYear}</p>
+        <p>${movie.mainActors}</p>
+      </div>
+      <div class="card-bottom">
+        <img src= '${movie.image}'></img>
+      </div>
+        `;
+      });
+
+      document.body.appendChild(card);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .progress-bar-container {
+        margin-inline: 1rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      .indicator {
+        font-family: monospace;
+        font-size: 0.9rem;
+        color: grey;
+      }
+      .progress-bar-wrapper {
+        height: 30rem;
+        flex-grow: 1;
+        position: relative;
+        width: 30px;
+      }
+      .progress-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0%;
+        background-color: blue;
+        transition: 0.4s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress-bar-container">
+      <span class="indicator">0%</span>
+      <div class="progress-bar-wrapper">
+        <div id="bar" class="progress-bar"></div>
+      </div>
+      <span class="indicator">100%</span>
+    </div>
+    <script>
+      function isValidPercentage(number) {
+        return !isNaN(number) && number >= 0 && number <= 100;
+      }
+
+      function getProgressColor(percentage) {
+        if (percentage < 20) return "darkred";
+        else if (percentage < 50) return "orange";
+        else if (percentage < 80) return "yellow";
+        else return "green";
+      }
+
+      function modifyProgressBar(percentage, color) {
+        let progressbar = document.getElementById("bar");
+        progressbar.title = `${percentage}%`;
+        progressbar.style.backgroundColor = color;
+        progressbar.style.height = `${percentage}%`;
+      }
+
+      function setProgress() {
+        let randomPercentage = Math.floor(Math.random() * 101);
+
+        if (!isValidPercentage(randomPercentage)) {
+          throw new Error("Invalid percentage generated!");
+        }
+
+        let progressColor = getProgressColor(randomPercentage);
+        modifyProgressBar(randomPercentage, progressColor);
+      }
+
+      setProgress();
+      setInterval(setProgress, 2000);
+    </script>
+  </body>
+</html>
