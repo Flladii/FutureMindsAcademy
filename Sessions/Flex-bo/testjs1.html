@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+</head>
+<body>
+    <script>
+        let percentage = parseInt(prompt('What is the progress?'));
+
+        //validation
+        if(isNaN(percentage) || percentage < 0 || percentage > 100)
+        throw new Error('invalid progress!');
+
+        //output
+        console.log(`${percentage}%`);
+
+        //logic
+        let color;
+
+        if(percentage <= 20)
+            color = 'red';
+
+        else if(percentage <= 50 )
+            color = 'yellow';
+        else if(percentage <=80)
+            color = 'orange';
+        else 
+            color = 'green';
+
+        //output
+        let progressBar = document.getElementById('bar');
+        progressBar.style.width = `${percentage}%`;
+        progressBar.style.backgroundColor = color;
+        progressBar.setAttribute('title' )
+    </script>
+</body>
+</html>
