@@ -315,7 +315,7 @@ footer:hover {
   border-radius: 15px;
   width: 80%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 17px;
   padding: 5px;
 }
 
@@ -328,7 +328,7 @@ footer:hover {
 transform: scale(1.05);}
 
 #projekti1 img {
-  width: 60%;
+  width: 45%;
   border: 2px solid black;
   border-radius: 12px;
 }
@@ -342,7 +342,7 @@ transform: scale(1.05);}
   border-radius: 15px;
   width: 80%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 17px;
   padding: 5px;
 }
 
@@ -355,7 +355,7 @@ transform: scale(1.05);}
 transform: scale(1.05);}
 
 #projekti2 img{
-  width: 60%;
+  width: 45%;
   border: 2px solid black;
   border-radius: 12px;
 }
@@ -369,7 +369,7 @@ transform: scale(1.05);}
   border-radius: 15px;
   width: 80%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 17px;
   padding: 5px;
 }
 
@@ -382,7 +382,7 @@ transform: scale(1.05);}
 transform: scale(1.05);}
 
 #projekti3 img {
-  width: 60%;
+  width: 45%;
   border: 2px solid rgba(0, 0, 0, 0.8);
   border-radius: 2%;
 }
@@ -394,7 +394,7 @@ transform: scale(1.05);}
   background-color: rgba(247, 0, 255, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 15px;
-  width: 900px;
+  width: 80%;
   margin: 0 auto;
   font-size: 20px;
   padding: 5px;
@@ -406,6 +406,7 @@ transform: scale(1.05);}
   border: 2px solid rgba(0, 0, 0, 0.8);
   transition: 0.8s;
 }
+
 
 .forma input {
   background-color: rgb(24, 24, 24, 0.9);
