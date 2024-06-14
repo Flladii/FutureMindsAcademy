@@ -1,470 +1,104 @@
-* {
-  box-sizing: border-box;
-  cursor: url(images/crosshair.png), crosshair;
-  width: auto;
-  height: auto;
-  scroll-behavior: smooth;
+*{
+    padding: 0;
+    margin: 0;
+    cursor: url(images/cursor.png), pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url(images/1301340.png);
-  background-repeat: re;
-  animation: fadeOut 4s ease forwards;
-}
-
-@font-face {
-  font-family: "TiltNeon-Regular";
-  src: url(fonts/TiltNeon-Regular.ttf);
-}
-
-@keyframes fadeOut {
-  from {
+    margin: 1rem 13.5rem;
+    background-image: url(/images/background1.png);
+    font-size: 1.2rem;
     opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/*------------ CSS FOR HOMMMMMMMMMEEEEEEEEEEEEEEEEEEEE */
-header h1 {
-  position: relative;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  font-size: 3.1rem;
-  color: white;
+    animation: fadeIn 3s forwards;
 }
 
-nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-  font-family: "TiltNeon-Regular";
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
-nav li {
-  display: inline;
-  margin-right: 30px;
+.textAlignCenter {
+    text-align: center;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  border: 2px solid rgba(255, 255, 255);
-  border-radius: 15px;
-  padding: 15px;
-  background-color: rgba(247, 0, 255, 0.3);
-  cursor: pointer;
+.marginY {
+    margin: 1.25rem 0;
 }
 
-nav a:hover {
-  color: rgba(247, 0, 255);
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(247, 0, 255);
-  transition: 0.9s;
+.marginX {
+    margin: 0 1rem;
 }
 
-#about-me, #education, #education:hover #underlist, #myskills, #myprojects, #myprojects:hover a, #projekti1, #projekti1:hover, #projekti2, #projekti2:hover, #projekti3, #projekti3:hover, #contactform, #connectwithme, #backhome a {
-  color: white;
+.aColorPurple:hover {
+    color: #6d08e9;
+    transition: 1.2s ease-in-out;
 }
 
-#about-me, #education, #myskills, #myprojects, #contactform, #connectwithme, #projekti1, #projekti2, #projekti3 {
-  transition: all 0.4s;
-  z-index: 10;
-  position: relative;
+.aLinks {
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#about-me:hover, #education:hover, #myskills:hover, #myprojects:hover, #contactform:hover, #connectwithme:hover, #projekti1:hover, #projekti2:hover, #projekti3:hover {
-  z-index: 11;
+.colorPink {
+    color: rgb(187, 24, 179);
 }
 
-#about-me {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px;
-  padding: 5px;
+.bgPurple {
+    background-color: #7851A9;
 }
 
-#about-me:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 1.2s ease-in-out;
-  opacity: 0 1;
-  animation-duration: 5s;
-transform: scale(1.05);}
-
-#about-me:not(:hover) {
-  transition: transform 2.2s ease;
-  transform: scale(1);
-  transition: all 1.2s ease-in-out;
+.colorWhite {
+    color: white;
 }
 
-#about-me:hover h2 {
-  color: rgba(247, 0, 255, 0.8);
-  transition: all 2s ease-in-out;
-  transition-duration: 2.2s;
+.listStyleNone {
+    list-style: none;
 }
 
-#about-me p {
-  text-align: center;
+.headerLinks{
+    display: inline;
+    list-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: whitesmoke solid 3px;
+    transition: 1.2s ease-in-out;
 }
 
-#about-me:hover p {
-  color: rgba(247, 0, 255, 0.8);
-  transition: all 2.2s ease-in-out;
-  transition-duration: 2.2s;
+.headerLinks:hover {
+    border: #5600be solid 3px;
+    background-color: #1e1c1fbb;
 }
 
-#about-me h2 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  font-size: 2.8rem;
+.card {
+    margin: 1.24rem;
+    padding: 10px;
+    border: whitesmoke solid 3px;
+    border-radius: 10px;
+    transition: 1s ease-in-out;
 }
 
-#about-me img{
-  width: 60%;
-  height: 300px;
-  border-radius: 15px;
-  border: 2px solid rgba(247, 0, 255, 0.8);
-  margin-bottom: 40px;
+.card:hover {
+    border: #5600be solid 3px;
+    background-color: #1e1c1f;
+    color: #6d08e9;
+    transform: scale(1.1);
 }
 
-#education {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1.30rem;
-  padding: 5px;
+input , textarea , .buttonSend{
+    border: #5600be solid 3px;
+    background-color: #1e1c1f;
+    color: #6d08e9;
+    border-radius: 15px;
+    padding: 5px;
 }
 
-#education ul {
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-  font-family: "TiltNeon-Regular";
-  margin-left: 24px;
-  letter-spacing: 3px;
+.projekt2img {
+    display: inline;
 }
 
-#education:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 1.2s ease-in-out;
-  opacity: 0 1;
-  animation-duration: 5s;
-  transform: scale(1.05);
+table {
+    border-collapse: collapse;
 }
-
-#education:not(:hover) {
-  transition: transform 2.2s ease;
-  transform: scale(1);
-  transition: all 1.2s ease-in-out;
-}
-
-#education li {
-  display: inline;
-  margin-right: 30px;
-}
-
-#myskills {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1.25rem;
-  padding: 5px;
-}
-
-#myskills:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-  animation: fadeIn 7s ease forwards;
-  transition-duration: 5s ease forwards;
-transform: scale(1.05);}
-
-#myskills:not(:hover) {
-  transition: transform 2.2s ease;
-  transform: scale(1);
-  transition: all 2.2s ease-in-out;
-}
-
-#myskills ul {
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-  font-family: "TiltNeon-Regular";
-  margin-left: 20px;
-}
-
-#myskills li {
-  display: inline;
-  margin-right: 30px;
-}
-
-#left1 {
-  float: right;
-}
-
-#right1 {
-  float: left;
-}
-
-#myskills:hover .ulskills {
-  color: rgba(255, 255, 255, 0.8);
-  transition: 0.8s;
-}
-
-#myprojects {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px;
-  padding: 5px;
-}
-
-#myprojects ol {
-  list-style: none;
-  cursor: pointer;
-}
-
-#myprojects:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-  animation: fadeIn 7s ease forwards;
-  transition-duration: 5s ease forwards;
-transform: scale(1.05);}
-
-#myprojects:not(:hover) {
-  transition: transform 2.2s ease;
-  transform: scale(1);
-  transition: all 2.2s ease-in-out;
-}
-
-#myprojects a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  line-height: 20px;
-}
-
-#myprojects:hover a {
-  padding: 2px;
-  transition: 0.9s;
-  color: aqua;
-  transition: 0.9s;
-}
-
-footer {
-  position: relative;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  color: white;
-  background-color: rgba(247, 0, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px;
-  padding: 5px;
-}
-
-footer:hover {
-  color: black;
-  background-color: rgb(24, 24, 24, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-}
-                                                                   /* CSS FOR MMMMMYYYYYYPPPPPROOOOOOJJJJJJJEEEEEEEECCCCCCCTTTTTTSSSSSS */
-#projekti1 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 17px;
-  padding: 5px;
-}
-
-#projekti1:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 1.2s ease-in-out;
-  animation-duration: 5s;
-transform: scale(1.05);}
-
-#projekti1 img {
-  width: 45%;
-  border: 2px solid black;
-  border-radius: 12px;
-}
-
-#projekti2 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 17px;
-  padding: 5px;
-}
-
-#projekti2:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 1.2s ease-in-out;
-  animation-duration: 5s;
-transform: scale(1.05);}
-
-#projekti2 img{
-  width: 45%;
-  border: 2px solid black;
-  border-radius: 12px;
-}
-
-#projekti3 {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 17px;
-  padding: 5px;
-}
-
-#projekti3:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 1.2s ease-in-out;
-  animation-duration: 5s;
-transform: scale(1.05);}
-
-#projekti3 img {
-  width: 45%;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  border-radius: 2%;
-}
-/* CSSS FOR COOOOOOOOOOOONNNNNNNNNNNNNNTTTTTTTTTTTTAAAAAAAAAAAAAACCCCCCCCCCCTTTTTTTTTTTTTTTTTT */
-#contactform, #connectwithme {
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(247, 0, 255, 0.8);
-  font-family: "TiltNeon-Regular";
-  background-color: rgba(247, 0, 255, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px;
-  padding: 5px;
-}
-
-#contactform:hover {
-  color: rgba(247, 0, 255, 0.8);
-  background-color: rgb(24, 24, 24, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  transition: 0.8s;
-}
-
-
-.forma input {
-  background-color: rgb(24, 24, 24, 0.9);
-  margin: 10px;
-  font-weight: bold;
-  outline: none;
-  font-size: 15px;
-  color: rgba(247, 0, 255, 0.8);
-  width: 250px;
-  height: 40px;
-}
-
-.forma textarea {
-  background-color: rgb(24, 24, 24, 0.9);
-  width: 500px;
-  height: 150px;
-  resize: none;
-  margin: 10px;
-  font-weight: bold;
-  outline: none;
-  font-size: 15px;
-}
-
-.forma button {
-  background-color: rgb(24, 24, 24, 0.9);
-  resize: none;
-  margin: 10px;
-  font-weight: bold;
-  outline: none;
-  font-size: 15px;
-  color: rgba(247, 0, 255, 0.8);
-  width: 250px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.forma:hover input:hover, button:hover, textarea:hover {
-  color: rgba(247, 0, 255, 0.8);
-  transition: 0.8s;
-  border: 2px solid rgba(247, 0, 255, 0.8);
-  border-radius: 10px;
-  transition: 0.9s;
-}
-
-#backhome a {
-  font-style: italic;
-  cursor: pointer;
-  text-decoration: underline black;
-}
-
-#connectwithme img {
-  width: 110px;
-  cursor: pointer;
-}
-
-.BackToTop {
-  width: 70px;
-  cursor: pointer;
-  float: right;
-}
-#line1 {width: 50%; color: white;}

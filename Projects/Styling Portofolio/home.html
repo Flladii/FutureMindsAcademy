@@ -4,115 +4,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="images/iconFlladHyseni.png" />
   <title>Home Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="homeheader">
-    <h1>Personal Portfolio</h1>
-    <hr id="line1" />
+  <header class="textAlignCenter marginY colorWhite">
+    <hr>
+    <h1 class="marginY">Personal Portfolio</h1>
     <nav>
       <ul>
-        <li id="l1">
-          <a href="project.html" class="hoveri">My Projects &#128193;</a>
-        </li>
-        <li id="l2">
-          <a href="contact.html" class="hoveri">Contact Me! &#128233;</a>
-        </li>
+        <li class="headerLinks marginX bgPurple"><a href="project.html" class="aLinks colorWhite aColorPurple">My
+            Projects</a> &#128640;</li>
+        <li class="headerLinks  marginX bgPurple"><a href="contact.html" class="aLinks colorWhite aColorPurple">Contact
+            Me!</a> &#128153;</li>
       </ul>
     </nav>
   </header>
-  <hr id="line1" />
+  <hr />
   <main>
-    <section id="about-me">
-      <h2>Who is <u>Fllad Hyseni?</u></h2>
+    <section id="about-me" class="card colorWhite textAlignCenter bgPurple">
+      <h2 class="marginY">Who is <u>Fllad Hyseni?</u></h2>
       <figure>
-        <img src="images/offishell.png" alt="Fllad Hyseni - Profile" class="fotoprofilit" />
+        <img src="images/profili1.png" alt="Fllad Hyseni - Profile" />
       </figure>
-      <p>
+      <p class="marginY">
         I am Fllad Hyseni, a teenager with specific skills in technology,
         particularly in programming. I have some unofficial projects, mainly
         for testing purposes, in languages such as HTML5, CSS3, JavaScript,
         Java, Python, and more. I am working towards achieving my goal, and at
-        the moment, I am learning HTML5 at Future Minds Academy (FMA).
+        the moment, I am learning HTML5 & CSS3 at Future Minds Academy (FMA).
       </p>
     </section>
-    <hr id="line1" />
-    <section id="education">
-      <h2>Education</h2>
-      <ul id="lista">
-        <li>Primary School:</li>
+    <hr />
+    <section id="education" class="card bgPurple colorWhite textAlignCenter marginY">
+      <h2 class="marginY">Education</h2>
+      <ul>
+        <li class="listStyleNone">Primary School:</li>
         <ul>
-          <li id="underlist"><strong>Thimi Mitko</strong></li>
+          <li class="listStyleNone"><strong>Thimi Mitko</strong> (2015-2024)</li>
         </ul>
-      </ul>
-      <ul id="lista">
-        <li>Courses:</li>
-        <ul>
-          <li id="underlist"><strong>Future Minds Academy</strong></li>
-        </ul>
+        <li class="listStyleNone">Courses:</li>
+        <ul class="listStyleNone"><strong>Future Minds Academy</strong> (FMA)</ul>
       </ul>
     </section>
-    <hr id="line1" />
-    <section id="myskills">
+    <hr />
+    <section id="my-skills" class="card textAlignCenter marginY colorWhite bgPurple">
       <h2>My Skills</h2>
-      <section class="myskills2">
-        <ul id="main-title">
-          <li id="right1">Language</li>
-          <li id="left1">Rating</li>
-        </ul>
-        <ul class="ulskills">
-          <li id="right1">English Language</li>
-          <li id="left1">9.0</li>
-        </ul>
-
-        <ul class="ulskills">
-          <li id="right1">Mathematics</li>
-          <li id="left1">8.0</li>
-        </ul>
-
-        <ul class="ulskills">
-          <li id="right1">HTML5</li>
-          <li id="left1">5.0</li>
-        </ul>
-
-        <ul class="ulskills">
-          <li id="right1">CSS3</li>
-          <li id="left1">3.0</li>
-        </ul>
-
-        <ul class="ulskills">
-          <li id="right1">JavaScript</li>
-          <li id="left1">1.0</li>
-        </ul>
-      </section>
+      <table border="1">
+        <tr>
+          <th>#</th>
+          <th>English Language</th>
+          <th>Mathematics</th>
+          <th>HTML5</th>
+          <th>CSS3</th>
+          <th>JavaScript</th>
+        </tr>
+        <tr>
+          <td>Rating</td>
+          <td>9.0</td>
+          <td>9.0</td>
+          <td>5.0</td>
+          <td>2.0</td>
+          <td>0.5</td>
+        </tr>
+      </table>
     </section>
-    <hr id="line1" />
-    <section id="myprojects">
+    <hr />
+    <section id="my-projects" class="card textAlignCenter marginY colorWhite bgPurple">
       <h2>My Projects</h2>
       <ol>
-        <li>
+        <li class="listStyleNone">
           PopQuiz Projekt
-          <a href="project.html#projekti1">&rarr;</a>
+          <a href="project.html#pop-quiz-projekt" class="aLinks colorPink">&#10132;</a>
         </li>
-        <li>
+        <li class="listStyleNone">
           Login & Register Projekt
-          <a href="project.html#projekti2">&rarr;</a>
+          <a href="project.html#login-register-projekt" class="aLinks colorPink">&#10132;</a>
         </li>
-        <li>
+        <li class="listStyleNone">
           Video Projekt
-          <a href="project.html#projekti3">&rarr;</a>
+          <a href="project.html#videoprojekt1" class="aLinks colorPink">&#10132;</a>
         </li>
       </ol>
     </section>
   </main>
-  <hr id="line1" />
-  <a href="#"><img src="images/scrollup.png" alt="BackToTop" class="BackToTop" /></a>
-  <footer>
+  <hr />
+  <footer class="card textAlignCenter marginY colorWhite bgPurple">
     <p>All rights reserved Fllad Hyseni &copy;</p>
   </footer>
 </body>
-
 </html>

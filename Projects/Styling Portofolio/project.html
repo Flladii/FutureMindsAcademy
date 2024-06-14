@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="images/iconFlladHyseni.png" />
-  <title>Projects Page</title>
-</head>
-
-<body>
-  <header>
-    <h1>My Projects</h1>
-    <hr id="line1" />
-    <nav>
-      <ul>
-        <li>
-          <a href="home.html" class="hoveri">Home &#127968;</a>
-        </li>
-        <li>
-          <a href="contact.html" class="hoveri">Contact Me! &#128233;</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <hr id="line1" />
-  <main>
-    <section id="projekti1">
-      <h2>Pop Quiz Project</h2>
-      <figure>
-        <img src="images/projekti1.png" alt="Pop Quiz Project" class="projektifoto1" />
-      </figure>
-      <p>
-        This is a project called "Pop Quiz," which is built using only HTML5.
-        This project includes around 30 questions and 30 answers, with each
-        page containing 10 questions. It has been professionally coded and is
-        100% functional.
-      </p>
-    </section>
-    <hr id="line1" />
-    <section id="projekti2">
-      <h2>Login & Register Form Project</h2>
-      <figure>
-        <img src="images/img-loginform/login-img.png" alt="Login Form Image" width="250" class="projektifoto2" />
-      </figure>
-      <p>
-        This project is called "Login & Register Form" because it contains
-        forms for logging in and registering on this website. This website
-        only includes HTML5, and the buttons are all functional, except that
-        it lacks the functionality to store the email and password for access,
-        requiring another programming language to complete it.
-      </p>
-    </section>
-    <hr id="line1" />
-    <section id="projekti3">
-      <h2>Video Project</h2>
-      <figure>
-        <img src="images/video-projekt.png" alt="Video Projekt Image" width="350" class="projektifoto3" />
-      </figure>
-      <p>
-        This project is named "Video Project," alternatively "Favorite
-        Celebrity," because it contains videos and resembles a part of
-        YouTube. This project includes the song "Si Mua" by Dafina Zeqiri &
-        Elgit Doda, and the choice was made according to preference. This
-        website is created to serve as a kind of biography of what the video
-        contains and the artists involved.
-      </p>
-    </section>
-  </main>
-  <hr id="line1" />
-  <a href="#"><img src="images/scrollup.png" alt="BackToTop" class="BackToTop" /></a>
-  <footer>
-    <p>All rights reserved Fllad Hyseni &copy;</p>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/iconFlladHyseni.png" />
+    <title>Projects Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="textAlignCenter marginY colorWhite">
+      <hr />
+      <h1 class="marginY">My Projects</h1>
+      <nav>
+        <ul>
+          <li class="headerLinks marginX bgPurple"><a href="home.html" class="aLinks colorWhite aColorPurple">Home</a> &#127968;</li>
+          <li class="headerLinks marginX bgPurple"><a href="contact.html" class="aLinks colorWhite aColorPurple">Contact Me!</a> &#128153;</li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <section id="pop-quiz-projekt" class="card colorWhite textAlignCenter bgPurple ">
+        <h2 class="marginY">Pop Quiz Project</h2>
+        <p class="marginY">
+          This is a project called "Pop Quiz," which is built using only HTML5.
+          This project includes around 30 questions and 30 answers, with each
+          page containing 10 questions. It has been professionally coded and is
+          100% functional.
+        </p>
+        <figure>
+          <img
+            src="images/quiz-projekt.png"
+            alt="Pop Quiz Project"
+            width="300"
+          />
+        </figure>
+      </section>
+      <hr />
+      <section id="login-register-projekt" class="card colorWhite textAlignCenter bgPurple">
+        <h2 class="marginY">Login & Register Form Project</h2>
+        <p class="marginY">
+          This project is called "Login & Register Form" because it contains
+          forms for logging in and registering on this website. This website
+          only includes HTML5, and the buttons are all functional, except that
+          it lacks the functionality to store the email and password for access,
+          requiring another programming language to complete it.
+        </p>
+        <figure class="projekt2img" >
+          <img
+            src="images/img-loginform/login-img.png"
+            alt="Login Form Image"
+            width="250"
+          />
+        </figure>
+        <figure class="projekt2img">
+          <img
+            src="images/img-loginform/register-img.png"
+            alt="Register Form Image"
+            width="200"
+          />
+        </figure>
+      </section>
+      <hr />
+      <section id="videoprojekt1" class="card colorWhite textAlignCenter bgPurple">
+        <h2 class="marginY">Video Project</h2>
+        <p class="marginY">
+          This project is named "Video Project," alternatively "Favorite
+          Celebrity," because it contains videos and resembles a part of
+          YouTube. This project includes the song "Si Mua" by Dafina Zeqiri &
+          Elgit Doda, and the choice was made according to preference. This
+          website is created to serve as a kind of biography of what the video
+          contains and the artists involved.
+        </p>
+        <figure>
+          <img
+            src="images/video-projekt.png"
+            alt="Video Projekt Image"
+            width="350"
+          />
+        </figure>
+      </section>
+    </main>
+    <hr />
+    <footer class="card colorWhite textAlignCenter bgPurple">
+      <p>All rights reserved Fllad Hyseni &copy;</p>
+    </footer>
+  </body>
 </html>
