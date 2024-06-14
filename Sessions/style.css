@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 15vh;
+    align-items: center;
+
+}
+
+a , li {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+.imgCat {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+main {
+    height: 85vh;
+    background-color: pink;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+
+section {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    width: 30rem;
+}
+
+.catCard {
+    border-radius: 15px;
+}
