@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    background-color: white;
+    border: black solid 3px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+p {
+    padding-top: 1.2rem;
+}
+
+
